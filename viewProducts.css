@@ -1,49 +1,70 @@
-.card_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+#clearAll {
+    width: auto;
+    margin: 0;
+    float: left;
+    background-color: red;
+    color: white;
 }
 
-.card {
-    width: 230px;
-    padding: 10px;
-    margin: 20px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
-    transition: 0.5s;
+#deleteForm>input {
+    margin: 0;
+    float: left;
 }
 
-.card:hover {
-    transform: scale(1.05);
+html {
+    scroll-behavior: smooth;
 }
 
-.card>img {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
+.navbar {
+    /* background-color: white; */
+    /* border-top: 1px solid black; */
+    background: #f19d1f;
+    background: -webkit-linear-gradient(59deg, #0B553E, #F19D1F);
+    background: linear-gradient(59deg, #0B553E, #F19D1F);
 }
 
-h1 {
+nav>a>img {
+    width: 85px;
+}
+
+.header_img {
+    height: 740px;
+    background-image: url("img/slideshowV1-bg1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_img>div>p {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header_img>div {
+    padding: 200px 0 0 50px;
+}
+
+.header_img p:nth-child(2) {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+li {
+    margin-left: 15px;
+}
+
+h2 {
     text-align: center;
-    margin: 40px 0;
-    color: #f19d1f;
+    margin: 10px 0 0;
+    font-size: 3.1rem;
 }
 
-form {
-    text-align: center;
-    margin: 30px;
-    font-size: 20px;
+table>tbody>tr>td>img {
+    width: 100px;
+    height: 50px;
 }
-input {
-    background-color: white;
-    border: 1px solid #f19d1f;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
-    
+
+.table td {
+    vertical-align: middle;
 }
 
 input:hover {
@@ -52,31 +73,80 @@ input:hover {
     color: white
 }
 
-.card>span {
-    text-align: center;
-    margin-top: 10px;
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: 600;
 }
-.navbar {
-    /* background-color: white; */
-    /* border-top: 1px solid black; */
-    background: #f19d1f;
-    background: -webkit-linear-gradient(59deg, #0B553E, #F19D1F);
-    background: linear-gradient(59deg, #0B553E, #F19D1F);
-}
-nav>a>img {
-    width:85px;
-}
-li{
-    margin-left: 15px;
-}
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: white;
     background-color: #f19d1f;
 }
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-    font-weight: 600;
-}footer {
+
+form {
+    width: 100%;
+    margin: 30px;
+    font-size: 20px;
+}
+
+form>div {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #f19d1f;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addContainer {
+    width: 50%;
+    border: 5px solid #f19d1f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0 0 1000px rgba(0, 0, 0, 0.1);
+}
+
+form div:nth-child(5) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form input:nth-child(6) {
+    width: 100%;
+    float: middle;
+}
+
+form:nth-child(2)>input,
+#deleteForm>input {
+    width: auto;
+    background-color: red;
+    color: white;
+}
+
+#viewProduct {
+    width: auto;
+}
+
+#deleteForm>input {
+    margin-right: 20px;
+}
+
+footer {
     background: #f19d1f;
     background: -webkit-linear-gradient(59deg, #F19D1F, #0B553E);
     background: linear-gradient(59deg, #F19D1F, #0B553E);
@@ -187,4 +257,42 @@ ul.social-network li {
 
 .social-network a {
     background-color: #F9F9F9;
+}
+
+@media screen and (max-width: 768px) {
+    .addContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width: 768px) {
+    .header_img {
+        height: 400px;
+        background-image: url("img/slideshowV1-bg1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header_img>div>p {
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .header_img>div {
+        padding: 140px 0 0 25px;
+    }
+
+    .header_img p:nth-child(2) {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .h4,
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
 }

@@ -95,7 +95,7 @@ form div:nth-child(5){
     justify-content: center;
 }
 form input:nth-child(6){
-    width: 50%;
+    width: 100%;
     float:middle;
 }
 form:nth-child(2) > input , #deleteForm > input {
@@ -104,8 +104,15 @@ form:nth-child(2) > input , #deleteForm > input {
     color: white;
     float: right;
 }
+#viewProduct{
+    width: auto;
+}
 #deleteForm > input{
     margin-right: 20px;
+}
+#clearAll{
+    width: auto;
+    margin: auto;
 }
 footer {
     background: #f19d1f;
@@ -224,3 +231,11 @@ ul.social-network li {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
