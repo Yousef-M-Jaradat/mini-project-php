@@ -19,7 +19,7 @@ session_start();
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light fixed-top">
-        <a class="navbar-brand" href="#"><img src="img/rawabifarah_logo170.png"></a>
+        <a class="navbar-brand" href="#"><img src="img/logo1-removebg-preview.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,18 +28,18 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/PHP-Tasks/Task4(3-8-2023)/ecommerce.php?#">Home</a>
+                    <a class="nav-link" href="http://localhost/mini-project-php/ecommerce.php?#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/PHP-Tasks/Task4(3-8-2023)/ecommerce.php?#addProduct">Add
+                    <a class="nav-link" href="http://localhost/mini-project-php/ecommerce.php?#addProduct">Add
                         Product</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"
-                        href="http://localhost/PHP-Tasks/Task4(3-8-2023)/ecommerce.php?#productTable">Product Table</a>
+                        href="http://localhost/mini-project-php/ecommerce.php?#productTable">Product Table</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/PHP-Tasks/Task4(3-8-2023)/viewProducts.php?">View
+                    <a class="nav-link" href="http://localhost/mini-project-php/viewProducts.php?">View
                         Product</a>
                 </li>
             </ul>
